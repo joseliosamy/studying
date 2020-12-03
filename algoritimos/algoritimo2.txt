@@ -1,0 +1,26 @@
+FORMULÁRIO DE CADASTRO
+
+Usuario enviou o formulário
+
+1) Email está correto?
+    {
+        Se estiver{
+            nome está correto? 
+            se estiver{
+
+                Cpf está correto? se estiver{
+                    REALIZAR CADASTRO
+                    
+                }Se não estiver{
+                    apareça mensagem de erro
+                }
+
+            }Se não estiver
+                apareça mensagem de erro
+            }
+
+        }Se não estiver
+        {
+            apareça mensagem de erro
+        }
+}

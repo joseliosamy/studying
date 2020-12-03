@@ -1,0 +1,13 @@
+Objetivo: jantar.
+
+
+1°) Colocar a comida no prato.
+        Verificar se temos talheres para comer.
+            Se tiver
+                Posso comer
+
+            Se não tiver
+                Procure os talheres
+                    Enquanto não achar continue executando a função
+                
+
