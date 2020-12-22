@@ -34,7 +34,7 @@ body{
 
 /*fim do boot*/
 
-/*pré-pronto*/
+/*pré-code*/
 .input{
     border: 0;
     border-radius: 5px;
@@ -42,6 +42,8 @@ body{
     color: #242424;
     outline: none;
 }
+
+/*fim pre-code*/
 
 header{
     background: #3d437a;
@@ -85,6 +87,32 @@ nav.desktop ul a{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+.banner-principal form h2{
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.banner-principal form .box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.banner-principal form input[type="email"]{
+    width: 550px;
+    height: 50px;
+    padding: 10px 10px;
+    background-color: #ffffffd3;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.banner-principal form input[type="submit"]{
+    width: 210px;
+    height: 60px;
+    background-color: #3d437ade;
+    color: white;
+    cursor: pointer;
 }
 .autor{
     width: 100%;

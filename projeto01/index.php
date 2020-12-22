@@ -37,8 +37,8 @@
                 <form action="">
                     <h2>Qual o seu melhor email</h2>
                     <div class="box">
-                        <input class="input" type="email" name="email" required>
-                        <input type="submit" name="acao" value="Cadastrar">
+                        <input class="input" type="email" name="email" placeholder="Seu email" required>    
+                        <input class="input" type="submit" name="acao" value="Cadastrar">
                     </div>     
                 </form>
             </div>
