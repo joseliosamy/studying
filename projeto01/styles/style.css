@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+body{
+    width: 100%;
+}
+/* boot css*/
+.center{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.w75{
+    width: 75%;
+}
+.h100{
+    height: 100%;
+}
+.a-mr{
+    margin: 0 auto;
+}
+.w50{
+    width: 50%;
+}
+.flex{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
+
+/*fim do boot*/
+
+/*pré-pronto*/
+.input{
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    color: #242424;
+    outline: none;
+}
+
+header{
+    background: #3d437a;
+    height: 10vh;
+    color: white;
+    display: flex;
+}
+header .w75{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+header .logo{
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+nav.desktop ul{
+    display: flex;
+    list-style: none;
+}
+nav.desktop ul a{
+    text-decoration: none;
+    color: white;
+    margin: 0 12px;
+}
+
+#container{
+    margin: 0 auto;
+}
+.banner-principal{
+    height: 600px;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+.banner-principal form{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.autor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.autor-image{
+    width: 700px;
+}
+.autor-image img{
+    width: 100%;
+}
+.box-especialidade{
+    padding: 0 10px;
+}
+.depoimentos-single{
+    padding: 10px 0;
+}
+.nome-autor{
+    font-weight: bold;
+}
+.servicos ul li{
+    padding: 5px 0;
+}
+
+
