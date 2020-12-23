@@ -45,6 +45,7 @@ body{
 
 /*fim pre-code*/
 
+/*HEADER*/
 header{
     background: #3d437a;
     height: 10vh;
@@ -70,11 +71,24 @@ nav.desktop ul a{
     text-decoration: none;
     color: white;
     margin: 0 12px;
+    transition: 300ms;
 }
+nav.desktop ul a:hover{
+    color: #979797;
+}
+nav.mobile{
+    display: none;
+}
+/*FIM HEADER*/
 
+/*CORPO*/
 #container{
     margin: 0 auto;
 }
+
+/*FIM CORPO*/
+
+/*SECTION banner-principal*/
 .banner-principal{
     height: 600px;
     background-image: url(../images/bg.jpg);
@@ -100,7 +114,7 @@ nav.desktop ul a{
     flex-direction: column;
 }
 .banner-principal form input[type="email"]{
-    width: 550px;
+    width: min(80vw,550px);
     height: 50px;
     padding: 10px 10px;
     background-color: #ffffffd3;
@@ -108,34 +122,245 @@ nav.desktop ul a{
     font-size: 20px;
 }
 .banner-principal form input[type="submit"]{
-    width: 210px;
+    width: min(80vw, 210px);
     height: 60px;
     background-color: #3d437ade;
     color: white;
     cursor: pointer;
+    transition: background-color 200ms;
 }
-.autor{
+.banner-principal form input[type="submit"]:hover{
+    background-color:  #4853a3b4;
+}
+.banner-principal form input[type="submit"]:active{
+    background-color: #5d6399;
+}
+/*FIM banner-principal*/
+
+/*SECTION  descricao-autor*/
+.descricao-autor .autor{
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 10% 0;
 }
-.autor-image{
-    width: 700px;
-}
-.autor-image img{
+.descricao-autor .autor .content{
     width: 100%;
 }
-.box-especialidade{
-    padding: 0 10px;
+.descricao-autor .autor .content h2{
+    font-weight: 400;
+    font-size: 28px;
+    color: #4b4b4b;
+}
+.descricao-autor .autor .content p{
+    font-size: 16px;
+    color: #242424;
+    margin-top: 10px;
+}
+.descricao-autor .autor-image{
+    width: 450px;
+    margin-left: 20px;
+}
+.descricao-autor .autor-image img{
+    width: 100%;
+}
+
+/*FIM descricao-autor*/
+
+/*SECTION  especialidades*/
+.especialidades{
+    background-color: #E3E2E3;
+    width: 100%;
+}
+.especialidades .title{
+    color: #4b4b4b;
+    padding-top: 30px;
+    display: block;
+    font-size: min(10vw, 24px);
+    text-align: center;
+    font-weight: 300;
+}
+.box-especialidades{
+    padding: 8% 0;
+}
+.items-especialidade{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.items-especialidade + .items-especialidade{
+    margin-left: 10px;
+}
+.items-especialidade h3 i{
+    font-size: 45px;
+    padding: 30px 0;
+    color: #3D437A;
+}
+.items-especialidade h3 + h3{
+    color: #4b4b4b;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.items-especialidade p{
+    color: #5a5a5a;
+    font-size: 16px;
 }
 .depoimentos-single{
     padding: 10px 0;
 }
+
+/*FIM especialidades*/
+
+/*SECTION  extras*/
+.extras{
+    background-color: #414884;
+    color: white;
+}
+.box-extras{
+    padding: 5% 0;
+}
+.depoimentos{
+    margin-right: 20px;
+    font-size: 15px;
+}
+.depoimentos .title{
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+.depoimentos .depoimentos-single{
+    padding: 25px 15px 25px 0;
+}
 .nome-autor{
+    padding-top: 20px;
     font-weight: bold;
 }
+.servicos{
+    margin-left: 20px;
+    font-size: 15px;
+}
+.servicos .title{
+    font-weight: 300;
+    padding-bottom: 20px;
+}
 .servicos ul li{
-    padding: 5px 0;
+
+    padding: 20px 0;
+}
+/*FIM  extras*/
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: #333b85;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .center{
+    text-align: center;
+    color: white;
+    font-size: min(10vw,13px);
+}
+
+
+@media(max-width:850px){
+    .descricao-autor .autor{
+        flex-direction: column;
+    }
+    .descricao-autor .autor-image{
+        width: min(60vw, 300px);
+        padding-top: 20px;
+        margin: 0 auto;
+    }
+    
+}
+@media(max-width:650px){
+    header nav.desktop{
+        display: none;
+    }
+    header nav.mobile{
+        display: none;
+    }
+    header nav.mobile ul{
+        width: 100%;
+        height: 184px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        list-style: none;
+        background-color: #3d437a8c;
+        position: absolute;
+        left: 50%;
+        top: 77px;
+        transform: translateX(-50%);
+    }
+    header nav.mobile ul li{
+        width: 100%;
+        text-align: center;
+        margin: 1px 0;
+        background-color: #3d437a;
+    }
+    header nav.mobile ul a{
+        display: block;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        transition: background-color 400ms;
+    }
+    header nav.mobile ul a:hover{
+        background-color: #4853a3b4;
+    }
+    header nav.mobile ul a:active{
+        background-color: #5d6399;
+    }
+
+    header .hamburguer{
+        color: white;
+        font-size: 26px;
+        cursor: pointer;
+    }
+
+    
+    
+}
+@media(max-width:600px){
+    .box-especialidades{
+        flex-direction: column;
+    }
+    .items-especialidade{
+        padding: 0;
+    }
+    .box-extras{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    .depoimentos{
+        margin: 0;
+        padding-top: 30px;
+        text-align: center;
+    }
+    .depoimentos.w50{
+        width: 100%;
+    }
+    .depoimentos .title{
+        font-size: min(10vw, 20px);
+    }
+    .servicos{
+        margin: 0;
+        padding-top: 30px;
+    }
+    .servicos.w50{
+        width: 100%;
+    }
+    .servicos .title{
+        font-size: min(10vw, 20px);
+        text-align: center;
+    }
 }
 
 
