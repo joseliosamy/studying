@@ -48,7 +48,7 @@ body{
 /*HEADER*/
 header{
     background: #3d437a;
-    height: 10vh;
+    height: 100px;
     color: white;
     display: flex;
 }
@@ -282,12 +282,12 @@ footer .center{
         display: none;
     }
     header nav.mobile{
-        display: none;
+        display: flex;
     }
     header nav.mobile ul{
         width: 100%;
-        height: 184px;
-        display: flex;
+        height: 175px;
+        display: none;
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -295,7 +295,7 @@ footer .center{
         background-color: #3d437a8c;
         position: absolute;
         left: 50%;
-        top: 77px;
+        top: 98px;
         transform: translateX(-50%);
     }
     header nav.mobile ul li{

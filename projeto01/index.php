@@ -143,5 +143,7 @@
     </footer>
     
     <script src="https://use.fontawesome.com/6811180638.js"></script>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/home.js"></script>
 </body>
 </html>
